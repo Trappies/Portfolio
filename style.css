@@ -29,6 +29,7 @@ a,
 nav,
 .nav-links {
     display: flex;
+    z-index: 1001;
 }
 
 nav {
@@ -36,6 +37,7 @@ nav {
     align-items: center;
     height: 17vh;
     background-color: #222;
+    z-index: 1001;
 }
 
 .nav-links {
@@ -84,6 +86,7 @@ a:hover {
     height: 2px;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
+    z-index: 1001;
 }
 
 .menu-links {
@@ -95,6 +98,7 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    z-index: 1001;
 }
 
 .menu-links a {
@@ -312,7 +316,10 @@ section {
 
 .article {
     display: flex;
-    width: calc(33.33% - 3rem);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(33.33% - 3rem); /* Adjust the width as needed */
     justify-content: space-around;
     gap: 0.5rem;
 }

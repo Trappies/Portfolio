@@ -16,6 +16,7 @@
 
     #hamburger-nav {
         display: flex;
+        z-index: 1002;
     }
 
     #experience,
@@ -50,6 +51,7 @@
     .about-containers {
         margin-top: 0;
     }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -118,6 +120,11 @@
 
     .text-container {
         text-align: justify;
+    }
+
+    .about-containers {
+        display: flex;
+        flex-direction: column;
     }
 
     /* Update height responsiveness for specific sections */
